@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Queries</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="boot.css">
+        <style>
+            body {
+                background: url('http://static1.squarespace.com/static/54a9f884e4b040ef97e4b436/t/54bf7a34e4b0a062458a966a/1421834816483/contact-us-wallpaper.png?format=1500w');
+            }
+            td {
+                color: white;
+                font-family: Calibri;
+            }
+            input {
+                height: 30px;
+                width: 200px;
+            }
+            table {
+                width: 30%;
+                margin-left: 34.3%;
+                margin-top: 10%;
+            }
+            h2 {
+                text-align: center;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2>QUERIES & GRIEVANCES</h2>
+            <form action="valquery.php" method="post">
+                <table>
+                    <tr>
+                        <td>First Name: </td>
+                        <td><input type="text" class="form-control" name="fname" placeholder="First name"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name: </td>
+                        <td><input type="text" class="form-control" name="lname" placeholder="Last name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email: </td>
+                        <td><input type="text" class="form-control" name="email" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td>Contact: </td>
+                        <td><input type="text" class="form-control" name="contact" placeholder="Contact"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea rows="5" cols="50" class="form-control" name="query" placeholder="Enter your query/feedback/grievances"></textarea></td>
+                    </tr>
+                    <tr><td><p><!-- --></p></td></tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Submit" style="width: 250px; background-color: white; color: darkblue"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

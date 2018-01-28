@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Place order</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: calibri;
+                background: url('woodback.jpg');
+                color: white;
+            }
+            #button {
+                width: 100px;
+                height: 40px;
+            }
+	        #input {
+		        height: 20px;
+	        }
+	        #table1 tr td{
+		        padding: 5px;
+	        }
+	        #pright {
+		        padding-right: 30px;
+	        }
+	        #table input {
+		        border-radius: 3px; width: 300px;
+	        }
+        </style>
+        <script type="text/javascript">
+            function calcsum() {
+                var x=document.getElementByType
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <h1>Place your order</h1>
+            <form action="placeorder.php" method="post">
+                <table id="table" cellspacing="8">
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input type="text" name="fname" placeholder="First Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name:</td>
+                        <td><input type="text" name="lname" placeholder="Last Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td><input type="text" name="address" placeholder="Address"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="email" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td>Contact:</td>
+                        <td><input type="text" name="contact" placeholder="Contact"></td>
+                    </tr>
+		        </table>
+		        <table id="table1">
+                    <tr>
+                        <td><h3>Items</h3></td>
+                        <td><h3>Price</h3></td>
+                        <td><h3>Quantity</h3></td>
+                        <td><h3>Items</h3></td>
+                        <td><h3>Price</h3></td>
+                        <td><h3>Quantity</h3></td>
+                        <td><h3>Items</h3></td>
+                        <td><h3>Price</h3></td>
+                        <td><h3>Quantity</h3></td>
+                    </tr>
+                    <tr>
+                        <td><input id="ck" type="checkbox" value=2100 onclick="document.getElementById('w1').disabled=!this.checked;">Wheat 30kg</td>
+                        <td>2100</td>
+                        <td id="pright"><input type="text" id="w1" disabled="disabled"></td>
+                        <td><input id="ck" type="checkbox" value=3500 onclick="document.getElementById('w2').disabled=!this.checked;">Wheat 50kg</td>
+                        <td>3500</td>    
+                        <td id="pright"><input type="text" id="w2" disabled="disabled"></td>
+                        <td><input id="ck" type="checkbox" value=6980 onclick="document.getElementById('w3').disabled=!this.checked;">Wheat 100kg</td>
+                        <td>6980</td>
+                        <td id="pright"><input type="text" id="w3" disabled="disabled"></td>
+                    </tr>
+                    <tr>
+                        <td><input id="ck" type="checkbox" value=4200 onclick="document.getElementById('mg1').disabled=!this.checked;">Moong 30kg</td>
+                        <td>4200</td>
+                        <td id="pright"><input type="text" id="mg1" disabled="disabled"></td>
+                        <td><input id="ck" type="checkbox" value=6500 onclick="document.getElementById('mg2').disabled=!this.checked;">Moong 50kg</td>
+                        <td>6500</td>
+                        <td id="pright"><input type="text" id="mg2" disabled="disabled"></td>
+                        <td><input id="ck" type="checkbox" value=11000 onclick="document.getElementById('mg3').disabled=!this.checked;">Moong 100kg</td>
+                        <td>11000</td>
+                        <td id="pright"><input type="text" id="mg3" disabled="disabled"></td>
+                    </tr>
+                    <tr>
+                        <td><input id="ck" type="checkbox" value=2700 onclick="document.getElementById('m1').disabled=!this.checked;">Maize 30kg</td>
+                        <td>2700</td>
+                        <td id="pright"><input type="text" id="m1" disabled="disabled"></td>
+                        <td><input id="ck" type="checkbox" value=4000 onclick="document.getElementById('m2').disabled=!this.checked;">Maize 50kg</td>
+                        <td>4000</td>
+                        <td id="pright"><input type="text" id="m2" disabled="disabled"></td>
+                        <td><input id="ck" type="checkbox" value=7800 onclick="document.getElementById('m3').disabled=!this.checked;">Maize 100kg</td>
+                        <td>7800</td>
+                        <td id="pright"><input type="text" id="m3" disabled="disabled"></td>
+                    </tr>
+                    <tr>
+                        <td><input id="ck" type="checkbox" value=3000 onclick="document.getElementById('r1').disabled=!this.checked;">Rice 30kg</td>
+                        <td>3000</td>
+                        <td id="pright"><input type="text" id="r1" disabled="disabled"></td>
+                        <td><input id="ck" type="checkbox" value=4750 onclick="document.getElementById('r2').disabled=!this.checked;">Rice 50kg</td>
+                        <td>4750</td>
+                        <td id="pright"><input type="text" id="r2" disabled="disabled"></td>
+                        <td><input id="ck" type="checkbox" value=9950 onclick="document.getElementById('r3').disabled=!this.checked;">Rice 100kg</td>
+                        <td>9950</td>
+                        <td id="pright"><input type="text" id="r3" disabled="disabled"></td>
+                    </tr>
+                    <tr>
+                        <td><input id="ck" type="checkbox" value=3750 onclick="document.getElementById('g1').disabled=!this.checked;">Groundnut 30kg</td>
+                        <td>3750</td>
+                        <td id="pright"><input type="text" id="g1" disabled="disabled"></td>
+                        <td><input id="ck" type="checkbox" value=6250 onclick="document.getElementById('g2').disabled=!this.checked;">Groundnut 50kg</td>
+                        <td>6250</td>
+                        <td id="pright"><input type="text" id="g2" disabled="disabled"></td>
+                        <td><input id="ck" type="checkbox" value=12500 onclick="document.getElementById('g3').disabled=!this.checked;">Groundnut 100kg</td>
+                        <td>12500</td>
+                        <td id="pright"><input type="text" id="g3" disabled="disabled"></td>
+                    </tr>
+                    <tr>
+                        <td><input id="ck" type="checkbox" value=780 onclick="document.getElementById('pm1').disabled=!this.checked;">Pearl Millet 30kg</td>
+                        <td>780</td>
+                        <td id="pright"><input type="text" id="pm1" disabled="disabled"></td>
+                        <td><input id="ck" type="checkbox" value=1300 onclick="document.getElementById('pm2').disabled=!this.checked;">Pearl Millet 50kg</td>
+                        <td>1300</td>
+                        <td><input id="ck" type="text" id="pm2" disabled="disabled"></td>
+                        <td id="pright"><input type="checkbox" value=2600 onclick="document.getElementById('pm3').disabled=!this.checked;">Pearl Millet 100kg</td>
+                        <td>2600</td>
+                        <td id="pright"><input type="text" id="pm3" disabled="disabled"></td>
+                    </tr>
+                    <tr><td><input type="submit" value="Order" style="background-color: white" id="button"></td></tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

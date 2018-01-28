@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>LogIn</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div {
+                margin-left: 40%;
+                margin-top: 5%;
+            }
+            p {
+                text-align: center;
+                font-family: Arial;
+                font-size: 30px;
+            }
+            input {
+                margin-top: 5px; 
+                height: 30px;
+                width: 200px;
+            }
+            h2 {
+                font-family: calibri;
+            }
+            table {
+                border: 4px solid darkgreen;
+                padding: 30px;
+            }
+            a {
+                text-decoration: none;
+                font-family: calibri;
+                color: crimson;
+            }
+            a:hover {
+                text-decoration: none;
+                color: blue;
+            }
+            #oneline {
+                display: inline-block;
+            }
+        </style>
+        <script type="text/javascript">
+            function checkdet() {
+                var x=document.form1.EMAIL.value;
+                var y=document.form1.pw1.value;
+                if(x==="") {
+                    alert("Please enter your email");
+                    return false;
+                }
+                if(y==="") {
+                    alert("Please enter your password");
+                    return false;
+                }
+                else {
+                    //alert("Got Email and password");
+                    return true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <img src="logo.jpg" width="100" height="100" id="oneline"/> <span style="font-size: 25px; font-family: Arial; color: blueviolet" id="oneline"><h1>KD Agro. Ltd.</h1></span>
+        <p>You must Login to access our services.</p>
+        <div>
+            <form name="form1" action="validate.php" method="post">
+            <table>
+                <tr>
+                    <td><h2>Log In</h2></td>
+                </tr>
+                <tr>
+                    <td><input type="email" placeholder="Email" name="EMAIL" required></td>
+                </tr>
+                <tr>
+                    <td><input type="password" placeholder="Password" name="pw1" required></td>
+                </tr>
+                <tr>
+                    <td><a href="signup.html">Don't have account? Sign Up</a></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit" style='background-color: darkgreen; color: white' onclick="checkdet()"></td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </body>
+</html>

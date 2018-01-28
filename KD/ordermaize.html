@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Maize</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+        <style>
+            body {
+                font-family: calibri;
+            }
+            img {
+                width: 400px;;
+                height: 400px;
+                //float: left;
+            }
+            ul li {
+                display: inline;
+            }
+            p {
+                font-family: calibri;
+                font-size: 30px;
+                text-align: center;
+                color: navy;
+            }
+            #price {
+                margin-left: 40%;
+                border: 1px solid navy;
+            }
+            #price td {
+                
+            }
+            #info {
+                border: 1px solid gray;
+                border-radius: 3px;
+            }
+            #order {
+                padding: 15px;
+            }
+            a {
+                width: 100px;
+                height: 50px;
+                font-size: 20px;
+                background: rgb(58,85,240);
+                color: white;
+                text-decoration: none;
+                border: 2px solid rgb(38,58,169);
+                margin-top: 10%;
+                margin-left: 45%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="info">
+            <table>
+                <tr>
+                    <td><img src="maizepic.jpg"  style="border: 2px solid black"/></td>
+                    <td><p>We produce highest yielding , good maize hybrids . They have great tolerance to viruses/spoilage and have everything you search in a good food .</p></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p>The Maize is available in the following quantities: </p>
+            <table id="price" cellspacing="7">
+                <tr>
+                    <th>Quantity (in kilograms)</th>
+                    <th>Price in Rupees</th>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>600</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>900</td>
+                </tr>
+            </table>
+        </div>
+        <div id="order">
+            <a href="checklogstat.php">Place Order</a> 
+        </div>
+    </body>
+</html>

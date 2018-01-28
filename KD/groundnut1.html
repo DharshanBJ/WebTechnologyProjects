@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Groundnut</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            img {
+                width: 400px;
+                height: 400px;
+            }
+            body {
+                font-family: calibri;
+            }
+            #info {
+                border: 1px solid gray;
+                border-radius: 3px;
+            }
+            p {
+                font-family: calibri;
+                font-size: 30px;
+                text-align: center;
+                color: navy;
+            }
+            #price {
+                margin-left: 40%;
+                border: 1px solid navy;
+            }
+            #order {
+                padding: 15px;
+            }
+            a {
+                width: 100px;
+                height: 50px;
+                font-size: 20px;
+                background: rgb(58,85,240);
+                color: white;
+                text-decoration: none;
+                border: 2px solid rgb(38,58,169);
+                margin-top: 10%;
+                margin-left: 45%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='info'>
+            <table>
+                <tr>
+                    <td><img src="groundnutfarm.jpg" /></td>
+                    <td><p>Take a experience of the best groundnuts from the fields of Gujarat.</p></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p>The Groundnuts is available in the following quantities: </p>
+            <table id="price" cellspacing="7">
+                <tr>
+                    <th>Quantity (in kilograms)</th>
+                    <th>Price in Rupees</th>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>3750</td>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td>6250</td>
+                </tr>
+                <tr>
+                    <td>100</td>
+                    <td>12500</td>
+                </tr>
+            </table>
+        </div>
+        <div id="order">
+            <a href="checklogstat.php">Place Order</a>
+        </div>
+    </body>
+</html>

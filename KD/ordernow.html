@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order</title>
+        <link type="text/css" rel="stylesheet" href="newCss.css">
+        <!--<link rel="stylesheet" href="w3.css">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <style>
+            body {
+                background: url('woodback.jpg');
+                color: white;
+                font-family: calibri;
+            }
+            textarea {
+                width: 200px;
+            }
+            #form1{
+                width: 60%;
+                margin-left: 200px;
+                margin-top: 70px;
+				
+            }
+            #but {
+                width: 100px;
+                height: 40px;
+                color: navy;
+                font-size: 20px;
+            }
+            td {
+                font-size: 20px;
+            }
+            h2 {
+                text-align: center;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div>
+            <h2>PLACE YOUR ORDER</h2>
+            <form action="placeorder.php" method="post">
+                <table id="form1">
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input class="form-control" type="text" name="fname" placeholder="First Name">
+                    </tr>
+                    <tr>
+                        <td>Last Name:</td>
+                        <td><input class="form-control" type="text" name="lname" placeholder="Last Name">
+                    </tr>  
+                    <tr>
+                        <td>Address:</td>
+                        <td><input class="form-control" type="text" name="address" placeholder="Address">
+                    </tr>  
+                    <tr>
+                        <td>Contact:</td>
+                        <td><input class="form-control" type="text" name="contact" placeholder="Contact">
+                    </tr>
+                    <tr>
+                        <td>Place your order:</td>
+                        <td colspan="2"><textarea class="form-control" rows="10" name="order" columns="200" placeholder="Please put the item no. along with the quantity here. Refer to the table given at the required item's page."></textarea></td>
+                    </tr>
+                    <tr><td><p><!-- --></p></td></tr>
+                    <tr>
+                        <td><input id="but" type='submit' value="Submit"></td>
+                    </tr>
+                    <tr><td><p><!-- --></p></td></tr>
+                    <tr><td><p><!-- --></p></td></tr>
+                    <tr>
+                        <td colspan="2">Note: Payment to be made in cash on delivery. Amount to be payed as on bill receipt</td>
+                    </tr>
+                </table>    
+            </form>
+        </div>  
+    </body>
+</html>
