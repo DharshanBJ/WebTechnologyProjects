@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Report Generation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="boot.css">
+        <link rel="stylesheet" href="w3.css">
+	<script>
+		function gotopage1() {
+			window.location.href="CountPatientsInAMonth.html";
+		}
+		function gotopage2() {
+			window.location.href="CountPatientsByAge.html";
+		}
+		function gotopage3() {
+			window.location.href="CountPatientsByGender.html";
+		}
+	</script>
+	</head>
+	
+	<body>
+
+        <div style="text-align:center; margin:200px">
+          <p>
+		  <table>
+			<tr>
+			<td><input class="btn btn-success" type="button" value="Count by Month" style="height:100px" onclick="gotopage1()"></td>
+			<td><input class="btn btn-success" type="button" value="Count by Age" style="height:100px" onclick="gotopage2()"></td>
+			<td><input class="btn btn-success" type="button" value="Count by Gender" style="height:100px" onclick="gotopage3()"></td>
+            </tr> 
+		  </table>
+		  </p>
+        </div>
+	</div>
+	
+	
+	</body>
+</html>

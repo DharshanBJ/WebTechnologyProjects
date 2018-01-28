@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Admin Sign In</title>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="boot.css">
+        <link rel="stylesheet" href="w3.css">
+		
+		
+        <style>
+            #sign1 {
+                margin-left: 42%;
+                margin-top: 120px;
+            }
+			
+			.background-image { 
+			position: fixed;
+			left: 0;
+			right: 0;
+			z-index:0;
+			
+			display: block;
+			background:url('stet.jpg') no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover; 
+			background-size: cover; 
+			height: 50em
+			
+			width: 1450px;
+			height: 1200px;
+  
+			}
+
+
+		
+			input {
+            margin-top: 5px; 
+            height: 30px;
+            width: 260px;
+            }
+			
+			h2 {
+                font-family: calibri;
+            }
+		
+			td img {
+			width: 90px;
+			height: 50px; 
+			float: right;
+            }
+
+			.page-header{
+			margin-bottom: 0px;
+			margin-top:0px;
+			}
+
+			.navbar{
+			margin-bottom: 0px;
+			margin-top: 0px;
+			}			
+			
+        </style>
+		
+
+		
+        <script>
+            function checkvalid() {
+                var x=document.adminlogin.uname.value;
+                var y=document.adminlogin.pw1.value;
+                if(x==="") {
+                    alert("Please enter the email address/username");
+                    document.feedback.email.focus();
+                    return false;
+                }
+                if(y==="") {
+                    alert("Please enter the password");
+                    document.feedback.email.focus();
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        
+		<div>
+            <table style="background-color: white">
+		<tr>
+                    <td><div class="page-header">
+					<h1>K.J. Somaiya Medical College & Research Centre
+					<small>Out Patient Department management software</small>
+					</h1>
+					</div>
+					<td>
+                    <td><img src="somaiya.jpg" /></td>
+                    <td></td>
+		</tr>
+			</table>
+        </div>
+		
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">OPD management</a>
+				</div>
+				<div>
+					<ul class="nav navbar-nav">
+				        <li><a href="index.html">Home</a></li>
+				        <li class="active"><a href="#">Admin</a></li>
+				        <li><a href="doctorlogin.html">Doctor</a></li>
+				        <li><a href="stafflogin.html">Staff</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		
+		<div class="background-image">
+	
+		<div>
+		<div id="sign1" class="well" style="width:300px;">
+            <form name="adminlogin" action="validate.php" method="post">
+          
+			<table>
+                <tr>
+                    <td><h2>Administrator Login</h2></td>
+                </tr>
+                <tr>
+                    <td><input class="form-control" type="text" placeholder="Username" name="uname"></td>
+                </tr>
+                <tr>
+                    <td><input class="form-control" type="password" placeholder="Password" name="pw1"></td>
+                </tr>
+                
+				<tr><td><p><!-- --></p></td></tr>
+				
+				<tr>
+                    <td><input class="btn btn-success" type="submit" value="Sign In" onclick="checkvalid()"></td>
+				</tr>
+            </table>
+			
+            </form>
+        </div>
+		</div>
+		</div>
+    </body>
+</html>

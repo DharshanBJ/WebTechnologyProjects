@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Doctor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="boot.css">    
+        <link rel="stylesheet" href="w3.css">
+        <script type="text/javascript">
+        	window.onbeforeunload = function() {
+        		window.location.href="signout.php";
+        	}
+        </script>
+        <style>
+            td img {
+		width: 90px;
+		height: 50px;
+        float: right;
+            }
+            td h2 {
+		font-family: calibri;
+            }
+            h3 {
+                font-family: calibri;
+            }
+            
+            iframe {
+                height: 800px;
+                width: 85%;
+                border: 0px white;
+				margin-top:0px;
+				margin-bottom:0px;
+			}
+             #left{
+                height: 800px;
+                width: 15%;
+                background-color: #DFDFDF;
+                text-align: center;
+                float: left;
+				margin-top:0px;
+				margin-bottom:0px;
+   			}
+            
+            body {
+                margin: 0 auto;
+            }
+			
+			.navbar{
+			margin-bottom:0px;
+			margin-top:0px;
+			}
+			
+			.page-header{
+			margin-bottom:0px;
+			margin-top: 0px;
+			}
+        </style>
+    </head>
+    <body>
+        <div>
+            <table style="background-color: white">
+		<tr>
+                    <td><div class="page-header">
+					<h1>K.J. Somaiya Medical college & Research Centre  
+					<small>Out Patient Department management software</small>
+					</h1>
+					</div>
+					<td>
+                    <td><img src="somaiya.jpg" /></td>
+                    <td></td>
+		</tr>
+			</table>
+        </div>
+		
+		<nav class="navbar navbar-default">
+		<div class="container-fluid">
+		<div class="navbar-header">
+		<a class="navbar-brand" href="#">OPD management</a>
+		</div>
+		<div>
+		<ul class="nav navbar-nav">
+        <li class="disabled"><a href="index.html">Home</a></li>
+        <li class="disabled"><a href="#">Admin</a></li>
+        <li class="active"><a href="#">Doctor</a></li>
+        <li class="disabled"><a href="#">Staff</a></li>
+		</ul>
+		</div>
+		</div>
+		</nav>
+		
+		<div  id="left" class='nav'>
+            <ul class="nav nav-pills nav-stacked">
+			<li id="navlist"><a href='pinfo.html'  target='display1'>View Patient's info.</a></button></li>
+		    <li id="navlist"><a href="prescription.html" target='display1'>Prescription</a></button></li>
+		    <li id="navlist"><a href="docpassword.html" target='display1'>Change Password</a></button></li>
+			<li id="navlist"><a href="signout.php">Sign Out</a></button></li>
+			
+			</ul>
+		</div> 
+		
+        
+        <iframe name='display1' ></iframe>
+    </body>
+</html>

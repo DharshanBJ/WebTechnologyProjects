@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bill</title>
+		<link rel="stylesheet" href="boot.css">    
+        	<link rel="stylesheet" href="w3.css">
+		<style>
+			table {
+				 margin-left: 40%;
+				 margin-top: 15%;
+				 width:30%;	
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<form action="Bill_process.php" method="post">
+				<table>
+					<tr>
+						<td>Enter Patient ID: </td>
+						<td><input class="form-control" type="text" name="pid"></td>
+					</tr>
+					<tr>
+						<td>Enter Amount: </td>
+						<td><input class="form-control" type="text" name="amt"></td>
+					</tr>
+					<tr>
+						<td><input class="btn btn-success" type="submit" value="Submit"></td>
+					</tr>
+			</form>
+		</div>
+	</body>
+</html>

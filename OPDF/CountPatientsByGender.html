@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Count Patients by Gender</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="boot.css">
+        <link rel="stylesheet" href="w3.css"> 
+        <style>
+            .container {
+                margin-top: 100px;
+                margin-left: 300px;
+            }
+            input {
+                width: 200px;
+            }
+        </style>
+        <script>
+            function checkValidGender() { 
+                var x=document.getElementById("count1").value;
+                if(x!="Male" && x!="Female") {
+                    alert("Invalid gender entered. Age should be either Male or Female.");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <form class="form-inline" role="form" action="countbygender.php" method="post">
+                <div class="form-group">
+                    <label>Enter gender: </label>
+                    <input type="text" class="form-control" placeholder="Gender (Male/Female)" id="count1" name="countbyg"/>
+                </div>
+                <div><p></p></div>
+                <input type="submit" class="btn btn-success" value="Submit" onclick="checkValidGender()"/>
+            </form>
+        </div>
+    </body>
+</html>

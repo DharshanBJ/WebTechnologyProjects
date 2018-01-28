@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Count Patients of an age</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="boot.css">
+        <link rel="stylesheet" href="w3.css"> 
+        <style>
+            .container {
+                margin-top: 100px;
+                margin-left: 300px;
+            }
+            input {
+                width: 200px;
+            }
+        </style>
+        <script>
+            function checkValidAge() { 
+                var x=document.getElementById("count1").value;
+                if(x<1 || x>100) {
+                    alert("Invalid age entered. Age should be between 1 and 100.");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <form class="form-inline" role="form" action="countbyage.php" method="post">
+                <div class="form-group">
+                    <label>Enter age: </label>
+                    <input type="text" class="form-control" placeholder="Age" id="count1" name="countbya"/>
+                </div>
+                <div><p></p></div>
+                <input type="submit" class="btn btn-success" value="Submit" onclick="checkValidAge()"/>
+            </form>
+        </div>
+    </body>
+</html>

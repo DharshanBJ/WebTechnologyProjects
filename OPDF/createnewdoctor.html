@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Create Doctor's info</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="boot.css">  
+        <link rel="stylesheet" href="w3.css">
+        <style>
+             td img {
+		width: 90px;
+		height: 50px;
+                float: right;
+            }
+            td h2{
+		padding-left: 40px;
+		font-family: calibri;
+            }
+             #form1{
+                width: 60%;
+                margin-left: 200px;
+                margin-top: 70px;
+            }
+			#form2,#form3 {
+                width: 60%;
+                margin-left: 200px;
+                margin-top: 70px;
+            }	
+        </style>
+    </head>
+    <body>
+        <div>
+            <form action="doctor.php" method="post">          
+                <table class="table-responsive" id='form1'>
+                    <tr>
+                        <td colspan="4"><h3 class="well">Doctor's General Details</h3></td>
+                    </tr>
+					<tr>
+                        <td>Name: </td>
+                        <td><input class="form-control" type="text" name="fname" placeholder='First Name'></td>
+                        <td><input class="form-control" type="text" name="mname" placeholder='Middle Name'></td>
+                        <td><input class="form-control" type="text" name="lname" placeholder='Last Name'></td>
+                    </tr>
+                    <tr>
+                        <td>Address:  </td>
+                        <td colspan="3"><input class="form-control" type='text' name="address" placeholder='Address'></td>
+                    </tr>
+                    <tr>
+                        <td>City: </td>
+                        <td colspan="3"><input class="form-control" type='text' name="city" placeholder='City'></td>
+                    </tr>
+                    <tr>
+                        <td>State: </td>
+                        <td colspan="3"><input class="form-control" type='text' name="state" placeholder='State'></td>
+                    </tr>
+                    <tr>
+                        <td>Pincode: </td>
+                        <td colspan="3"><input class="form-control" type='text' name="pincode" placeholder='Pincode'></td>
+                    </tr>
+					<tr><td><p><!-- --></p></td></tr>
+					<tr><td><p><!-- --></p></td></tr>
+                    <tr>
+                        <td colspan="4"><h3 class="well">Qualification Details</h3></td>
+                    </tr>
+                    <tr>
+                        <td>Degree:</td>
+                        <td colspan="3"><input class="form-control" type='text' name="degree" placeholder='Degree'></td>
+                    </tr>
+                    <tr>
+                        <td>College: </td>
+                        <td colspan="3"><input class="form-control" type='text' name="college" placeholder='College'></td>
+                    </tr>
+                    <tr>
+                        <td>Year: </td>
+                        <td colspan="3"><input class="form-control" type="text" name="year" placeholder="Year"></td>
+                    </tr>
+               
+                    <tr>
+            
+					<tr><td><p><!-- --></p></td></tr>
+					<tr><td><p><!-- --></p></td></tr>					
+						<td colspan="4"><h3 class="well">Experience</h3></td>
+                    </tr>
+                    <tr>
+                        <td>Experience</td>
+                        <td colspan="3"><input class="form-control" type='text'  name="exp" placeholder='Enter Hospital name , field' id="Experience"></td>
+                    </tr>
+                    <tr>
+                        <td>No of years: </td>
+                        <td colspan="3"><input class="form-control" type='text' name="noy" placeholder='No of years' ></td>
+						
+                    </tr>
+					<tr><td><p><!-- --></p></td></tr>
+					<tr>
+					<td><input type='submit' class="btn btn-success" value="Create Doctor"></td>
+					</tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

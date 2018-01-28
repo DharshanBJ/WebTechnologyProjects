@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="boot.css">
+        <link rel="stylesheet" href="w3.css">
+		
+		<style>
+			.thumbnail {
+	            margin-top: 40px;
+	            margin-left:0px;
+	            margin-right:0px;
+	            background-color: white;
+	            opacity: 0.7;
+				border-radius: 10px;
+				position: relative; top: 50px;
+	        }
+            .thumbnail p {
+                color: black;
+                font-size: 15px;
+		     	/*opacity: 1.0;*/
+            }
+            .thumbnail:hover,.thumbnail p {
+                background-color: rgb(255,250,255);
+                opacity: 1.0;
+            }
+			 td img {
+				width: 90px;
+				height: 50px; 
+				float: right;
+            }
+			.page-header{
+				margin-bottom: 0px;
+				margin-top:0px;
+			}
+			.navbar{
+				margin-bottom: 0px;
+				margin-top: 0px;
+			}
+		</style>
+		
+		<script type = "text/javascript" >
+			history.pushState(null, null, 'index.html');
+			window.addEventListener('popstate', function(event) {
+			history.pushState(null, null, 'index.html');
+		});
+		</script>
+		
+		
+	</head>	
+
+	<body>
+
+
+		<div>
+            <table style="background-color: white">
+				<tr>
+                    <td><div class="page-header">
+					<h1>K.J. Somaiya Medical College & Research Centre
+					<small>Out Patient Department management software</small>
+					</h1>
+					</div>
+					<td>
+                    <td><img src="somaiya.jpg" /></td>
+                    <td></td>
+				</tr>
+			</table>
+        </div>
+ 
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">OPD management</a>
+				</div>
+				<div>
+					<ul class="nav navbar-nav">
+        				<li class="active"><a href="#">Home</a></li>
+        				<li><a href="login1.html">Admin</a></li>
+        				<li><a href="doctorlogin.html">Doctor</a></li>
+        				<li><a href="stafflogin.html">Staff</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+
+		<div style="background:url('stet.jpg') no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover; background-size: cover; height: 50em">
+		
+		<!-- <div class="jumbotron"> -->
+		
+		<div class="container">
+			<h1 style="font-size:60px; margin-top:22%;">Welcome to OPD landing page!</h1>
+			<h3>Easy and Efficient way to manage OPD records</h3>
+        	<div class="row">
+            	<div class="col-sm-4">
+					<div class="thumbnail" align="left">
+                    	<h2>Developed by</h2>
+                        <p>Site developed by KKDeV Web Designers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>	

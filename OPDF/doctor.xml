@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="doctor.xsl"?>
+<doctorsinfo>
+<doctor category="skinspecialist">
+<name>Pankaj Sudhir Shah</name>
+<degree>M.B.B.S</degree>
+<noy>9 years</noy>
+</doctor>
+<doctor category="skinspecialist">
+<name>Raj Kiner Patel</name>
+<degree>M.D</degree>
+<noy>6 years</noy>
+</doctor>
+<doctor category="cardiologist">
+<name>Ashish Mohan Roy</name>
+<degree>M.B.B.S</degree>
+<noy>12 years</noy>
+</doctor>
+</doctorsinfo>

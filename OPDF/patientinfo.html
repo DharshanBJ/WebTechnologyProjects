@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Patient Info</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="boot.css">
+        <link rel="stylesheet" href="w3.css">
+        <style>
+            td img {
+		width: 90px;
+		height: 50px;
+                float: right;
+            }
+            td h2 {
+		padding-left: 40px;
+		font-family: calibri;
+            }
+            #form1 {
+                width: 60%;
+                margin-left: 200px;
+                margin-top: 70px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            <form action="InsertPatient.php" method="post">
+                <table id="form1">
+                    <tr>
+                        <td colspan='4'><h3 class="well">Patient's General details</h3></td>
+                    </tr>
+                    <tr>
+                        <td>Name: </td>
+                        <td><input class="form-control" type="text"  name="Fname" placeholder="First name"></td>
+                        <td><input class="form-control" type="text" name="Mname" placeholder="Middle name"></td>
+                        <td><input class="form-control" type="text"  name="Lname" placeholder="Last name"></td>
+                    </tr>
+                    <tr>
+                        <td>Address:  </td>
+                        <td colspan="3"><input class="form-control" type='text' name="Address" placeholder='Address' id="address"></td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth: </td>
+                        <td><input class="form-control" type="date" name="DOB"></td>
+                    </tr>
+                    <tr>
+                        <td>Age: </td>
+                        <td><input class="form-control" type='text' name="Age" placeholder='Age'></td>
+                    </tr>
+		    <tr>
+			<td>Gender: </td>
+			<td><input class="form-control" type='text' name="Gender" placeholder='Gender'></td>    
+		    </tr>
+                    <tr>
+                        <td>Contact: </td>
+                        <td><input class="form-control" type='text' name="Residential" placeholder='Residential'></td>
+                        <td><input class="form-control" type='text' name="Mobile" placeholder='Mobile'></td>
+                        <td><input class="form-control" type='text'  name="Office" placeholder='Office'></td>
+                    </tr>
+                    <tr>
+                        <td>Email: </td>
+                        <td colspan='3'><input class="form-control" type='text'  name="Email" placeholder='Email'></td>
+                    </tr>
+                <tr><td><p><!-- --></p></td></tr>
+				<tr><td><p><!-- --></p></td></tr>
+                    <tr>
+                        <td colspan='4'><h3 class="well">Health details</h3></td>
+                    </tr>
+                    <tr>
+                        <td>Blood group: </td>
+                        <td><input class="form-control" type="text" name="BloodGroup" placeholder="Blood group"></td>    
+                    </tr>
+                    <tr>
+                        <td>Height(in cms):</td>						
+						<td><input class="form-control" type="text"  name="Height" placeholder="Height(cms)"></td>
+					</tr>
+		    <tr>
+                        <td>Weight(in kgs): </td>
+                        <td><input class="form-control" type="text"  name="Weight" placeholder="Weight(kgs)"></td>
+		    </tr>
+		    <tr>
+                        <td>Allergy: </td>
+                        <td><input class="form-control" type="text" name="Allergy" placeholder="Allergy"></td>
+                    </tr>
+                    <tr>
+                        <td><h6>Medical History:</h6></td>
+                    </tr>
+                    <tr>
+                        <td>Past records: </td> 
+                        <td colspan="3"><input class="form-control" type="text" name="PastHistory"  placeholder="Past History"></td>
+                    
+					</tr>
+					<tr><td><p><!-- --></p></td></tr>
+					<tr>
+						<td><input class="btn btn-success" type="submit" value="Create Patient"></td>
+					</tr>
+				</table>
+            </form>
+        </div>
+    </body>
+</html>
